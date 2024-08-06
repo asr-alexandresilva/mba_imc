@@ -24,8 +24,6 @@ form.addEventListener("submit", (event) => {
 
   const weight = Number(document.querySelector("#weight").value);
   const height = Number(document.querySelector("#height").value);
-
-  console.log(weight);
   const imc = weight / height ** 2;
 
   alert(`Seu IMC é: ${imc.toFixed(2)} | Classificação: ${getImcMessage(imc)}`);
